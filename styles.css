@@ -11,8 +11,11 @@ body {
     font-family: sans-serif;
 }
 
-a {
+a,
+::before,
+::after {
     text-decoration: none; /* removes underline from links */
+    color: var(--primary-color);
 }
 
 ul, ol {
@@ -44,9 +47,12 @@ button, input, select, textarea {
 :root {
     --primary-color:#F4E7CE;
     --secondary-color:#D95763;
+    --nav-hover:#fcd58e;
 }
 
-.nav-bar {
+/****** NAVIGATION ******/
+
+nav {
     padding: 20px;
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -54,18 +60,41 @@ button, input, select, textarea {
     font-size: 32px;
 }
 
-.nav-bar ul {
+nav ul {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.nav-bar li {
-    margin-left: 1em;
-    margin-right: 1em;
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    padding: 10px, 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+    color: var(--nav-hover);
 }
 
 .nav-beta {
     font-size: 18px;
+}
+
+/******** MAIN ********/
+
+
+
+/******** MEDIA ********/
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 12px 20px;
+    }
 }
