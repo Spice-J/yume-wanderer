@@ -116,7 +116,7 @@ h2, p {
     color: var(--secondary-color);
     font-size: xx-large;
     margin: 0;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 p {
@@ -131,11 +131,14 @@ p {
     display: flex;
     flex-wrap: no-wrap;
     justify-content: center;
+    margin: 5% 15%;
 }
 
 .img-container {
     max-width: 300px;
     max-height: 300px;
+    min-width: 300px;
+    min-height: 300px;
     overflow: hidden;
     margin: 2rem;
 }
@@ -157,4 +160,15 @@ p {
     nav a {
         padding: 12px 20px;
     }
+
+    h2, p {
+        margin: 0 5%; 
+    }
+
+    .details-img {
+        flex-wrap: wrap;
+    }
+
+    .media2 { order: 1;}
+    .media1 { order: 2;}
 }
