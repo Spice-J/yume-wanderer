@@ -119,6 +119,10 @@ h2, p {
     padding: 10px;
 }
 
+h2 {
+    margin-top: 50px;
+}
+
 p {
 
     font-size: larger;
@@ -132,6 +136,11 @@ p {
     flex-wrap: no-wrap;
     justify-content: center;
     margin: 5% 15%;
+}
+
+.details-img p {
+    display: flex;
+    align-items: center;
 }
 
 .img-container {
