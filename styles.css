@@ -83,7 +83,7 @@ nav a:hover, nav a:focus {
     font-size: 18px;
 }
 
-/******** MAIN ********/
+/******** WELCOME ********/
 
 .welcome {
     padding: 20px;
@@ -96,6 +96,54 @@ nav a:hover, nav a:focus {
     font-size: 50px;
     display: flex;
     justify-content: center;
+}
+
+/******** MAIN ********/
+
+main {
+    margin: 5% 15%;
+}
+
+/******** INTRO ********/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2, p {
+    color: var(--secondary-color);
+    font-size: xx-large;
+    margin: 0;
+    padding: 10px 0;
+}
+
+p {
+
+    font-size: larger;
+    max-width: 85%;
+}
+
+/******** DETAILS ********/
+
+.details-img {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+}
+
+.img-container {
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /******** MEDIA ********/
