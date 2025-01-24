@@ -11,17 +11,30 @@
       href="https://fonts.googleapis.com/css2?family=Modak&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/bd8407fede.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
+  <body>
     <nav>
+      <div class="mobile-btn">
+        <button
+          class="hamburger fa-solid fa-bars"
+          onclick="{openMenu()}"
+        ></button>
+      </div>
       <div class="nav-links">
         <ul class="nav-list">
-          <li><a href="">Home</a></li>
-          <li><a href="">Preorder <span class="nav-beta">(Beta)</span></a></li>
-          <li><a href="">FAQ</a></li>
+          <li class="nav-list-item"><a href="">Home</a></li>
+          <li class="nav-list-item">
+            <a href="">Preorder <span class="nav-beta">(Beta)</span></a>
+          </li>
+          <li class="nav-list-item"><a href="">FAQ</a></li>
         </ul>
       </div>
     </nav>
-
 
     <div class="landing">
       <img src="images/yume-title-scrn.png" alt="" />
@@ -35,41 +48,68 @@
         <h2>Lorem ipsum odor amet, consectetuer adipiscing elit.</h2>
 
         <p>
-            Cubilia felis conubia iaculis consectetur aptent facilisis ridiculus. Taciti tortor dictumst habitant id nisl integer risus auctor. Ante urna laoreet sagittis consequat habitasse ad per vehicula. Litora taciti arcu tempor aptent aliquet lobortis. Congue fames sagittis sit; nullam tortor ridiculus tempor congue. Proin duis auctor lobortis felis curae hendrerit enim!
+          Cubilia felis conubia iaculis consectetur aptent facilisis ridiculus.
+          Taciti tortor dictumst habitant id nisl integer risus auctor. Ante
+          urna laoreet sagittis consequat habitasse ad per vehicula. Litora
+          taciti arcu tempor aptent aliquet lobortis. Congue fames sagittis sit;
+          nullam tortor ridiculus tempor congue. Proin duis auctor lobortis
+          felis curae hendrerit enim!
         </p>
         <p>
-            aciti tortor dictumst habitant id nisl integer risus auctor. Ante urna laoreet sagittis consequat habitasse ad per vehicula. Litora taciti arcu tempor aptent aliquet lobortis. Congue fames sagittis sit; nullam tortor ridiculus tempor congue. Proin duis auctor lobortis felis curae hendrerit enim!
+          aciti tortor dictumst habitant id nisl integer risus auctor. Ante urna
+          laoreet sagittis consequat habitasse ad per vehicula. Litora taciti
+          arcu tempor aptent aliquet lobortis. Congue fames sagittis sit; nullam
+          tortor ridiculus tempor congue. Proin duis auctor lobortis felis curae
+          hendrerit enim!
         </p>
       </div>
 
-        <div class="details-img">
-            <div class="img-container">
-                <img src="images/vendi.png" alt="">
-            </div>
+      <div class="details-img">
+        <div class="img-container">
+          <img src="images/vendi.png" alt="" />
+        </div>
 
-            <p>
-                Ante urna laoreet sagittis consequat habitasse ad per vehicula. Litora taciti arcu tempor aptent aliquet lobortis. Congue fames sagittis sit; nullam tortor ridiculus tempor congue. Proin duis auctor lobortis felis curae hendrerit enim!
-            </p>
-        </div>
-        <div class="details-img">
-            <p class="media1">
-                Ante urna laoreet sagittis consequat habitasse ad per vehicula. Litora taciti arcu tempor aptent aliquet lobortis. Congue fames sagittis sit; nullam tortor ridiculus tempor congue. Proin duis auctor lobortis felis curae hendrerit enim!
-            </p>
+        <p>
+          Ante urna laoreet sagittis consequat habitasse ad per vehicula. Litora
+          taciti arcu tempor aptent aliquet lobortis. Congue fames sagittis sit;
+          nullam tortor ridiculus tempor congue. Proin duis auctor lobortis
+          felis curae hendrerit enim!
+        </p>
+      </div>
+      <div class="details-img">
+        <p class="media1">
+          Ante urna laoreet sagittis consequat habitasse ad per vehicula. Litora
+          taciti arcu tempor aptent aliquet lobortis. Congue fames sagittis sit;
+          nullam tortor ridiculus tempor congue. Proin duis auctor lobortis
+          felis curae hendrerit enim!
+        </p>
 
-            <div class="img-container">
-                <img src="images/takoyaki.png" alt="" class="media2">
-            </div>
+        <div class="img-container">
+          <img src="images/takoyaki.png" alt="" class="media2" />
         </div>
-        <div class="details-img">
-            <div class="img-container">
-                <img src="images/tori.png" alt="">
-            </div>
+      </div>
+      <div class="details-img">
+        <div class="img-container">
+          <img src="images/tori.png" alt="" />
+        </div>
 
-            <p>
-                Ante urna laoreet sagittis consequat habitasse ad per vehicula. Litora taciti arcu tempor aptent aliquet lobortis. Congue fames sagittis sit; nullam tortor ridiculus tempor congue. Proin duis auctor lobortis felis curae hendrerit enim!
-            </p>
-        </div>
-        </div>
-    </main>
+        <p>
+          Ante urna laoreet sagittis consequat habitasse ad per vehicula. Litora
+          taciti arcu tempor aptent aliquet lobortis. Congue fames sagittis sit;
+          nullam tortor ridiculus tempor congue. Proin duis auctor lobortis
+          felis curae hendrerit enim!
+        </p>
+      </div>
+    </div>
+
+    <div class="carousel-container">
+    <div class="carousel">
+        <button id="left-btn" class="carousel-btn"><i class="arrow"></i></button>
+        <img id="carousel-img" src="" alt="">
+        <button id="right-btn" class="carousel-btn"><i class="arrow"></i></button>
+    </div>
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
