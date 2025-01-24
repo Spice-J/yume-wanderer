@@ -2,19 +2,19 @@ const navBar = document.querySelector(".nav-list");
 const img = document.getElementById('carousel-img');
 const rightBtn = document.getElementById('right-btn');
 const leftBtn = document.getElementById('left-btn');
-
+let navOpen;
 
 
 //Open/close nav bar function
-let open;
 
-function openMenu() {
-    if (open) {
+
+function openNav() {
+    if (navOpen) {
         navBar.style.display = 'none';
-        open = false;
-    } else if (!open) {
+        navOpen = false;
+    } else if (!navOpen) {
         navBar.style.display = 'block';
-        open = true;
+        navOpen = true;
     }
 
 }

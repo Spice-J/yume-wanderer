@@ -110,12 +110,6 @@ nav a:hover, nav a:focus {
     justify-content: center;
 }
 
-/******** MAIN ********/
-
-main {
-    margin: 5% 15%;
-}
-
 /******** INTRO ********/
 
 .intro {
@@ -279,6 +273,10 @@ p {
 
 @media screen and (min-width: 801px) {
     nav {
+        display: flex !important;
+    }
+
+    .nav-list {
         display: flex !important;
     }
 }
